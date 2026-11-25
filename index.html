@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>JARVIS</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="app">
+  <aside class="sidebar">
+    <div class="brand"><span class="orb"></span> JARVIS</div>
+    <button id="newChat" class="btn primary">+ New chat</button>
+    <h3>History</h3>
+    <ul id="history" class="list"></ul>
+    <h3>Memory</h3>
+    <ul id="notes" class="list"></ul>
+  </aside>
+
+  <main class="main">
+    <div id="messages" class="messages">
+      <div class="msg assistant">Good day. I am JARVIS. How can I help you?</div>
+    </div>
+
+    <form id="form" class="composer">
+      <button type="button" id="mic" class="icon-btn" title="Speak">🎤</button>
+      <input id="input" type="text" placeholder="Ask Jarvis anything... (try: remember my exam is on Friday)" autocomplete="off">
+      <button class="btn primary" type="submit">Send</button>
+      <label class="speak-toggle"><input type="checkbox" id="speak" checked> Voice</label>
+    </form>
+  </main>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>
